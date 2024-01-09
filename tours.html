@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туры</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Ribeye&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tours_css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="index.html">
+            <img src="tours_images/header/logo.svg" alt="logo">
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="regions.html">РЕГИОНЫ</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="reviews.html">ОТЗЫВЫ ТУРИСТОВ</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="tours.html">ТУРЫ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="tours">
+        <div class="container">
+          <div class="tours__inner">
+            <h1 class="tours__title">
+              Предлагаем вам ознакомится с турами которые предлагает наше турагентсво
+            </h1>
+            <ul class="tours__list">
+              <li class="tours__item">
+                <img class="tours__item-img" src="tours_images/main/img-1.jpg" alt="">
+                <div class="tours__item-box">
+                  <h2 class="tours__item-title">
+                    База отдыха «Дубки», Нижегородская область
+                  </h2>
+                  <p class="tours__item-text">
+                    Изба 8000 рублей в сутки.
+                  </p>
+                </div>
+                <button class="tours__item-btn tours__item-btn--first"  data-price="8000">забронировать</button>
+              </li>
+              <li class="tours__item">
+                <img class="tours__item-img" src="tours_images/main/img-2.jpg" alt="">
+                <div class="tours__item-box">
+                  <h2 class="tours__item-title">
+                    Центр агротуризма «Бужа», Республика Башкортостан
+                  </h2>
+                  <p class="tours__item-text">
+                    Летний домик 3000 рублей в день
+                  </p>
+                </div>
+                <button class="tours__item-btn tours__item-btn--second"  data-price="3000">забронировать</button>
+              </li>
+              <li class="tours__item">
+                <img class="tours__item-img" src="tours_images/main/img-3.jpg" alt="">
+                <div class="tours__item-box">
+                  <h2 class="tours__item-title">
+                    Село Солоновка, Алтайский край
+                  </h2>
+                  <p class="tours__item-text">
+                    Домик 1500 рублей в день
+                  </p>
+                </div>
+                <button class="tours__item-btn tours__item-btn--third"  data-price="1500">забронировать</button>
+              </li>
+            </ul>
+          </div>
+          <div class="tours__popup">
+            <button class="tours__popup-close" type="button">
+              <img class="tours__popup-close-img" src="tours_images/main/close-btn.png" alt="">
+            </button>
+            <h3 class="tours__popup-question-day">На сколько дней вы планируете остаться?</h3>
+            <h3 class="tours__popup-question-phone">Укажите номер телефона для обратной связи</h3>
+            <h3 class="tours__popup-text">Спасибо что воспользовались услугами нашего турагентства, наш оператор в скором времени свяжется с вами для уточнения деталей поездки</h3>
+            <input class="tours__popup-input" type="text">
+            <p class="tours__popup-price hidden"></p>
+            <button class="tours__popup-btn tours__popup-btn--first">Подтвердить</button>
+            <button class="tours__popup-btn tours__popup-btn--second">Подтвердить</button>
+            <button class="tours__popup-btn tours__popup-btn--third">Закрыть</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="tel:+79886666666">
+                <img class="footer__link-img" src="tours_images/footer/phone.svg" alt="">
+                <span class="footer__link-content">
+                  +7-988-666-66-66
+                </span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="mailto:grtourism@gmail.com">
+                <img class="footer__link-img" src="tours_images/footer/email.svg" alt="">
+                <span class="footer__link-content">
+                  grtourism@gmail.com
+                </span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <ul class="footer__social-list">
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <img src="tours_images/footer/social-1.svg" alt="youtube">
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <img src="tours_images/footer/social-2.svg" alt="telegram">
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <img src="tours_images/footer/social-3.svg" alt="vk">
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="tours_js/main.js"></script>
+  </body>
+</html>
